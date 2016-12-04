@@ -1,0 +1,51 @@
+﻿The following are the steps to setup the git repositary.
+
+Step 1: Install git.
+
+	sudo apt-get install git-core
+
+Step 2: Customize git environment.
+
+	git config --global user.name "Vaisakh G" [Adding Username]
+	
+	git config --global user.email "vaisakhtgm619@gmail.com" [Adding EmailId]
+
+	git config --global branch.autosetuprebase always  [Avoiding merge commits for pulling]
+
+	git config –list [View Git settings]
+
+Step 3: Create a bare repository.
+
+	Create an account in github.com and create a repository [dev].
+
+Step 4: Copy the key to remote repository.
+	
+	Copy the ssh-id and paste it on github site.
+	
+	Settings > SSH and GPG keys > New SSH key > Paste the key here.
+
+Step 5: Create a local directory.
+
+	mkdir ysak_repo
+	cd ysak_repo
+	git init
+	
+Step 6: Create a sample file and initail commit.
+	Create a sample file. [README]
+	
+	git add .
+	
+	git commit -m “initaial Commit”
+
+Step 7: Push the repository.
+
+	git remote add origin ysak-g@github.com:dev.git [adding]
+	
+	git push dev master
+
+
+ 
+
+
+
+	
